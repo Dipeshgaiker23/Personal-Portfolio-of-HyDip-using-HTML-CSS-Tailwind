@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.intro{
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+@tailwind utilities;
