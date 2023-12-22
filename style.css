@@ -9,4 +9,12 @@ body{
     font-size: 3rem;
     line-height: 3.5rem;
 }
+
+.tweet img{
+    filter: contrast(80%);
+}
+
+.github img{
+    filter: contrast(110%)
+}
 @tailwind utilities;
