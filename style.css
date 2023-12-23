@@ -17,4 +17,9 @@ body{
 .github img{
     filter: contrast(110%)
 }
+
+.insta2{
+    filter: contrast(80%)
+}
+
 @tailwind utilities;
