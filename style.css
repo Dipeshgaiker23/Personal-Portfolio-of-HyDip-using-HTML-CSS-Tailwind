@@ -22,4 +22,12 @@ body{
     filter: contrast(80%)
 }
 
+.hy{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.dip{
+    font-family: 'Dancing Script', cursive;
+}
+
 @tailwind utilities;
