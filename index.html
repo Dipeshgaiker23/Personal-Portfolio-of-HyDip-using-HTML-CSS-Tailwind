@@ -21,17 +21,18 @@
             </div>
             <div class="right">
                 <ul class="flex justify-center">
-                    <li class="mt-1">Home</li>
-                    <li class="mx-14 mt-1">About me</li>
-                    <li class="mt-1">Skills</li>
-                    <li class="mx-14 mt-1">Experience</li>
-                    <li class="bg-white text-[#2b144d] rounded p-1">Contact me</li>
-                    <li class="mx-14 hover:underline mt-1"><a href="images/Dipesh CV.pdf" target="_blank">CV</a></li>
+                    <li class="mt-1"><button onclick="scrollToHome()">Home</button></li>
+                    <li class="mx-10 mt-1"><button onclick="scrollToAbout()">About me</button></li>
+                    <li class="mt-1"><button onclick="scrollToSkills()">Skills</button></li>
+                    <li class="mx-10 mt-1"><button onclick="scrollToExperience()">Experience</button></li>
+                    <li class="mt-1"><button onclick="scrollToProjects()">Projects</button></li>
+                    <li class="bg-white text-[#2b144d] rounded p-1 ml-10"><button onclick="scrollToContactMe()">Contact me</button></li>
+                    <li class="mx-10 hover:underline mt-1"><a href="images/Dipesh CV.pdf" target="_blank">CV</a></li>
                 </ul>
             </div>
         </nav>
         <main>
-            <section class="firstSection Home flex justify-around my-16 items-center">
+            <section class="firstSection Home flex justify-around my-16 items-center" id="home">
                 <div class="leftSection w-[34%]">
                     Hello&#128075;,
                     <div class=" mt-2 intro">My Name is <span class="text-purple-800">Dipesh</span>
@@ -87,7 +88,7 @@
                 </div>
             </div>
             <section class="aboutSkills mt-10">
-                <div class="aboutme w-[80vw] m-auto  ">
+                <div class="aboutme w-[80vw] m-auto  " id="about">
                     <div class="bg-blue-100 w-[36vw] p-7 rounded-md">
                         <h1 class="text-2xl font-medium text-purple-950">About me</h1>
                         <span class="text-gray-500 w-[30vw] block my-5">As a Web Developer, I am responsible for
@@ -96,7 +97,7 @@
                             consectetur adipisicing elit. Eos earum debitis maiores?</span>
                     </div>
                 </div>
-                <div class="skills w-[80vw] flex m-auto justify-end mt-16">
+                <div class="skills w-[80vw] flex m-auto justify-end mt-16" id="skills">
                     <div class="containskills bg-blue-100 rounded-md p-7">
                         <h1 class="text-2xl font-medium text-purple-950 mb-4">My Skills</h1>
                         <span class="text-gray-700 w-[27vw] block my-1">Technologies I've been working with
@@ -140,7 +141,7 @@
                 </div>
             </section>
             <hr class="w-[80vw] m-auto my-9">
-            <section class="secondSection experience w-[80vw] m-auto h-[80vh] ">
+            <section class="secondSection experience w-[80vw] m-auto h-[80vh]" id="experience">
                 <span class="text-gray-500">What I have done so far</span>
                 <h1 class="text-2xl font-medium">Past Experience</h1>
 
@@ -183,7 +184,7 @@
                     </div>
                 </div>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <h1 class="text-2xl font-medium m-auto w-[80vw]">Projects</h1>
                 <div class="cards flex my-8">
                     <div
@@ -191,7 +192,9 @@
                         <img class="w-36 p-1" src="images/portfolioText.jpg" alt="">
                         <div class="fCText text-center p-1">Portfolio Project with HTML, JS, Tailwind</div>
                         <hr class="border-0 bg-gray-400  h-[1px] mx-1">
-                        <div class="gitLink p-1 hover:mr-2"><a class="flex justify-center hover:underline" target="_blank" href="https://github.com/Dipeshgaiker23/Personal-Portfolio-of-HyDip-using-HTML-CSS-Tailwind.git">
+                        <div class="gitLink p-1 hover:mr-2"><a class="flex justify-center hover:underline"
+                                target="_blank"
+                                href="https://github.com/Dipeshgaiker23/Personal-Portfolio-of-HyDip-using-HTML-CSS-Tailwind.git">
                                 <img class="mr-1 " src="images/github.svg" alt="">View Code</a>
                         </div>
                     </div>
@@ -264,7 +267,8 @@
                         <img class="w-24 p-1 ml-6" src="images/clock.png" alt="">
                         <div class="fCText text-center p-1">Clock with HTML, Javascript, Bootastrap</div>
                         <hr class="border-0 bg-gray-400  h-[1px] mx-1">
-                        <div class="gitLink p-1 hover:mr-2"><a class="flex justify-center hover:underline" target="_blank" href="https://github.com/Dipeshgaiker23/Clock-using-Javascript.git   ">
+                        <div class="gitLink p-1 hover:mr-2"><a class="flex justify-center hover:underline"
+                                target="_blank" href="https://github.com/Dipeshgaiker23/Clock-using-Javascript.git   ">
                                 <img class="mr-1 " src="images/github.svg" alt="">View Code</a>
                         </div>
                     </div>
@@ -278,11 +282,11 @@
                                 href="https://github.com/Dipeshgaiker23/Tic-Tac-Toe-Game-Using-JS-CSS-HTML.git"><img
                                     class="mr-1 " src="images/github.svg" alt="">View Code</a></div>
                     </div>
-                    
+
                 </div>
             </section>
 
-            <section class="contact me w-[97vw] flex h-[87vh] bg-purple-300 text-[#190e27] m-auto mt-32 py-9 px-16">
+            <section class="contact me w-[97vw] flex h-[87vh] bg-purple-300 text-[#190e27] m-auto mt-32 py-9 px-16" id="contactme">
                 <div class="leftSection w-[50%] h-[100%]">
                     <div class="heading text-4xl mt-2">
                         <h1>Let's discuss </h1>
@@ -375,6 +379,30 @@
             strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Photo Editor'],
             typeSpeed: 50,
         });
+        function scrollToHome() {
+            var element = document.getElementById("home");
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+        function scrollToAbout() {
+            var element = document.getElementById("about");
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+        function scrollToSkills() {
+            var element = document.getElementById("skills");
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+        function scrollToProjects() {
+            var element = document.getElementById("projects");
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+        function scrollToExperience() {
+            var element = document.getElementById("experience");
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+        function scrollToContactMe() {
+            var element = document.getElementById("contactme");
+            element.scrollIntoView({ behavior: "smooth" });
+        }
     </script>
 </body>
 
